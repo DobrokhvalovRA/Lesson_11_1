@@ -2,14 +2,15 @@ public class Main {
     public static void main(String[] args) {
         int i, count_Cat = 10;
 
-        Bow bow1 = new Bow(500);
-        bow1.fill_Bow(100);
+        Bow bow1 = new Bow(500); //Создаем миску
+        bow1.fill_Bow(100); // Наполняем миску
 
+        // Создаем много котов
         Cat[] cat = new Cat[count_Cat];
         for (i = 0; i < count_Cat; i++) {
             cat[i] = new Cat("Мурзя" + i);
-            cat[i].eat(bow1);
-            if (cat[i].satiety == false)
+            cat[i].eat(bow1); //кормим котов
+            if (cat[i].satiety == false) // смотрим сытый или нет
                 System.out.println(cat[i].name + " - остался голодным !");
             else
                 System.out.println(cat[i].name + " - наелся от пуза !");

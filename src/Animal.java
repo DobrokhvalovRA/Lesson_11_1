@@ -3,8 +3,10 @@ abstract public class Animal {
     protected boolean satiety;
     private static int count_Animal;
 
+    //Считаем животных
     public Animal() {
         count_Animal++;
+
     }
 
     public Animal(String name, boolean satiety) {

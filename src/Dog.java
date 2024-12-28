@@ -1,11 +1,13 @@
 public class Dog extends Animal {
     private static int count_Dog;
 
+    //Считаем собак
     public Dog(String name) {
         super(name, false);
         count_Dog++;
     }
 
+    //Бежим
     void animal_Run(int distance) {
         if (distance <= 0)
             System.out.println("Вы ввели не корректное значение!");
@@ -14,6 +16,7 @@ public class Dog extends Animal {
         else System.out.println("Собака - " + name + " не может пробежать так много!");
     }
 
+    //Плывем
     void animal_Swim(int distance) {
         if (distance <= 0)
             System.out.println("Вы ввели не корректное значение!");
@@ -22,6 +25,7 @@ public class Dog extends Animal {
         else System.out.println("Собака - " + name + " не может проплыть так много!");
     }
 
+    //Смотрим сколько собак
     void show_Count_Dog() {
         System.out.println("Всего создали :" + count_Dog + " собак!");
     }
