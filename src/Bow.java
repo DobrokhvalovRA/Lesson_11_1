@@ -1,5 +1,13 @@
 public class Bow {
-    public int count;
+    private int count;
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     // Количество еды
     public Bow(int count) {
@@ -7,7 +15,7 @@ public class Bow {
     }
 
     // Наполнение миски
-    public void fill_Bow(int count) {
+    public void fillBow(int count) {
         if (count >= 0)
             this.count = this.count + count;
         else

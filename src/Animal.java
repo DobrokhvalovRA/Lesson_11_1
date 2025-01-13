@@ -1,12 +1,11 @@
-abstract public class Animal {
+public abstract class Animal {
     protected String name;
     protected boolean satiety;
-    private static int count_Animal;
+    private static int countAnimal;
 
     //Считаем животных
     public Animal() {
-        count_Animal++;
-
+        countAnimal++;
     }
 
     public Animal(String name, boolean satiety) {
@@ -16,15 +15,15 @@ abstract public class Animal {
     }
 
 
-    public void show_Name() {
+    public void showName() {
         System.out.println("\n" + name);
     }
 
-    public void show_Count_Animal() {
-        System.out.println("Всего создали :" + count_Animal + " животных!");
+    public void showCountAnimal() {
+        System.out.println("Всего создали :" + countAnimal + " животных!");
     }
 
-    abstract void animal_Run(int distance);
+    abstract void animalRun(int distance);
 
-    abstract void animal_Swim(int distance);
+    abstract void animalSwim(int distance);
 }
